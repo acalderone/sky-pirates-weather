@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/weather.js", "use": "@vercel/node" },
+    { "src": "index.html",     "use": "@vercel/static" }
+  ],
+  "rewrites": [
+    { "source": "/api/weather", "destination": "/api/weather.js" }
+  ]
+}
